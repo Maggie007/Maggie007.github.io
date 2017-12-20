@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="laravel," />
 
 
 
@@ -79,16 +79,22 @@
 
 
 
-<meta name="description" content="Let life be beautiful like summer flowers">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Maggie&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="记录在Windows下搭建laravel5.5环境，这里总结一下，方便自己之后laravel环境的搭建。 安装laravel环境所需工具Laravel 5.5 文档–使用 Laragon 在 Windows 中搭建 Laravel 开发环境由于有详细的文档说明，这里就不赘述，只是划一些重点。">
+<meta name="keywords" content="laravel">
+<meta property="og:type" content="article">
+<meta property="og:title" content="laravel环境搭建">
+<meta property="og:url" content="http://yoursite.com/2017/12/20/laravel-environment/index.html">
 <meta property="og:site_name" content="Maggie&#39;s Blog">
-<meta property="og:description" content="Let life be beautiful like summer flowers">
+<meta property="og:description" content="记录在Windows下搭建laravel5.5环境，这里总结一下，方便自己之后laravel环境的搭建。 安装laravel环境所需工具Laravel 5.5 文档–使用 Laragon 在 Windows 中搭建 Laravel 开发环境由于有详细的文档说明，这里就不赘述，只是划一些重点。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2017/12/20/laravel-environment/15053922077289.jpg">
+<meta property="og:image" content="http://yoursite.com/2017/12/20/laravel-environment/laragon_setup1.png">
+<meta property="og:image" content="http://yoursite.com/2017/12/20/laravel-environment/laragon_setup2.png">
+<meta property="og:updated_time" content="2017-12-20T09:25:10.992Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Maggie&#39;s Blog">
-<meta name="twitter:description" content="Let life be beautiful like summer flowers">
+<meta name="twitter:title" content="laravel环境搭建">
+<meta name="twitter:description" content="记录在Windows下搭建laravel5.5环境，这里总结一下，方便自己之后laravel环境的搭建。 安装laravel环境所需工具Laravel 5.5 文档–使用 Laragon 在 Windows 中搭建 Laravel 开发环境由于有详细的文档说明，这里就不赘述，只是划一些重点。">
+<meta name="twitter:image" content="http://yoursite.com/2017/12/20/laravel-environment/15053922077289.jpg">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/20/laravel-environment/"/>
 
 
 
 
 
-  <title>Maggie's Blog</title>
+  <title>laravel环境搭建 | Maggie's Blog</title>
   
 
 
@@ -143,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +242,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +274,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/20/laravel-environment/" itemprop="url">laravel环境搭建</a></h1>
+          <h1 class="post-title" itemprop="name headline">laravel环境搭建</h1>
         
 
         <div class="post-meta">
@@ -343,17 +346,34 @@
       
 
       
-        
-          <p>记录在Windows下搭建laravel5.5环境，这里总结一下，方便自己之后laravel环境的搭建。</p>
+        <p>记录在Windows下搭建laravel5.5环境，这里总结一下，方便自己之后laravel环境的搭建。</p>
 <h2 id="安装laravel环境所需工具"><a href="#安装laravel环境所需工具" class="headerlink" title="安装laravel环境所需工具"></a>安装laravel环境所需工具</h2><p><a href="http://laravelacademy.org/post/7754.html" target="_blank" rel="noopener">Laravel 5.5 文档–使用 Laragon 在 Windows 中搭建 Laravel 开发环境</a><br>由于有详细的文档说明，这里就不赘述，只是划一些重点。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/20/laravel-environment/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<h3 id="Laragon集成开发环境"><a href="#Laragon集成开发环境" class="headerlink" title="Laragon集成开发环境"></a>Laragon集成开发环境</h3><p><a href="https://sourceforge.net/projects/laragon/" target="_blank" rel="noopener">下载laragon</a><br>下载之后，开始安装即可。一定要勾选 Auto virtual hosts这个选项，可以自动生成项目对应的域名。安装成功之后，自己可以去laragon的设置中配置。<br><img src="/2017/12/20/laravel-environment/15053922077289.jpg" alt="laragon setup"></p>
+<h3 id="配置Laragon"><a href="#配置Laragon" class="headerlink" title="配置Laragon"></a>配置Laragon</h3><p>在常规配置中，配置好项目根目录路径和本地访问域名<br><img src="/2017/12/20/laravel-environment/laragon_setup1.png" alt="laragon setup1"></p>
+<p>非常方便地切换 PHP、Apache、MySQL 的不同版本，也可选择Apache或Nginx作为web服务器。默认的服务器端口号为80，MySQL数据库的端口号为3306，由于我本地的80和3306端口被占用，即改为8080和3308，当然对应的配置文件的端口号信息也要重新配置。<br><img src="/2017/12/20/laravel-environment/laragon_setup2.png" alt="laragon setup2"></p>
+<h3 id="安装composer"><a href="#安装composer" class="headerlink" title="安装composer"></a>安装composer</h3><p><a href="https://getcomposer.org/Composer-Setup.exe" target="_blank" rel="noopener">下载composer</a><br>下载之后，默认安装即可。</p>
+<h3 id="配置composer"><a href="#配置composer" class="headerlink" title="配置composer"></a>配置composer</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer config -g repo.packagist composer https://packagist.phpcomposer.com</span><br></pre></td></tr></table></figure>
+<h2 id="安装laravel"><a href="#安装laravel" class="headerlink" title="安装laravel"></a>安装laravel</h2><p>首先，通过 Composer 安装 Laravel 安装器。安装成功之后查看composer是否添加进了环境变量（C:\U<br>sers\admnistrator\AppData\Roaming\Composer\vendor\bin），没有最好手动添加，否则不能在命令行任意路径下调用 laravel 命令。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer global require <span class="string">"laravel/installer"</span></span><br></pre></td></tr></table></figure></p>
+<p>接下来就可以通过laravel命令创建项目<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// laravel new 命令</span><br><span class="line">laravel new blog</span><br><span class="line"></span><br><span class="line">// Composer 的 create-project 命令</span><br><span class="line">composer create-project --prefer-dist laravel/laravel blog</span><br><span class="line"></span><br><span class="line">// 创建指定版本的laravel项目</span><br><span class="line">composer create-project --prefer-dist laravel/laravel blog 5.4.*</span><br></pre></td></tr></table></figure></p>
+<p>如果之前已经安装过旧版本的 Laravel 安装器，需要更新后才能安装最新的 Laravel 最新版本框架应用：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer global update</span><br></pre></td></tr></table></figure></p>
+<p>安装成功之后配置好对应的站点，在本地即可访问。</p>
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'laravel-environment',
+  title: ' laravel环境搭建',
+  owner: 'Maggie007',
+  repo: 'Comments',
+  oauth: {
+    client_id: 'bd8af55b811f4efee8e4',
+    client_secret: '182163c5cbdb21f3a429143b1985e0fa9c18f853',
+  },
+})
+gitment.render('container')
+</script>
       
     </div>
     
@@ -363,316 +383,70 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Maggie 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Maggie 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/08/laravel/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maggie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://ww2.sinaimg.cn/large/7f318987jw1f72m7gv450j205k05kmx1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Maggie's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/08/laravel/" itemprop="url">laravel项目初体验</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-08T11:23:23+08:00">
-                2017-12-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHP/" itemprop="url" rel="index">
-                    <span itemprop="name">PHP</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/laravel/" rel="tag"># laravel</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>一直想学习laravel框架，现在将自己自学laravel的经历记录一下，加油！^ _ ^</p>
-<h2 id="常用的命令"><a href="#常用的命令" class="headerlink" title="常用的命令"></a>常用的命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// laravel项目下载</span><br><span class="line">composer create-project laravel/laravel project_name --prefer-dist <span class="string">"5.3.*"</span></span><br><span class="line"></span><br><span class="line">// 创建控制器</span><br><span class="line">php artisan make:contoller IndexController</span><br><span class="line"></span><br><span class="line">// 创建资源控制器</span><br><span class="line">php artisan make:controller PostController --resource</span><br><span class="line"></span><br><span class="line">// 查看路由列表</span><br><span class="line">php artisan route:list</span><br><span class="line"></span><br><span class="line">// 新增中间件</span><br><span class="line">php artisan make:middleware adminLogin</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/08/laravel/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/08/laravel/" rel="next" title="laravel项目初体验">
+                <i class="fa fa-chevron-left"></i> laravel项目初体验
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/01/hexo/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Maggie">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://ww2.sinaimg.cn/large/7f318987jw1f72m7gv450j205k05kmx1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Maggie's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/12/01/hexo/" itemprop="url">Hexo-Github搭建博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-01T16:18:13+08:00">
-                2017-12-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index">
-                    <span itemprop="name">study</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h2 id="Hexo的安装及配置"><a href="#Hexo的安装及配置" class="headerlink" title="Hexo的安装及配置"></a>Hexo的安装及配置</h2><p>以前觉得自己写博客是一件很遥远的事情，之后接触到hexo有一种相见恨晚的赶脚，学习过程中很轻松便捷就能记录学习过程和其中的心得体会。<br>在安装hexo之前，先必须确保以下软件</p>
-<ul>
-<li>Git</li>
-<li>Node.js</li>
-</ul>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/01/hexo/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -682,10 +456,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -693,6 +468,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -713,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -794,6 +582,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装laravel环境所需工具"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x5B89;&#x88C5;laravel&#x73AF;&#x5883;&#x6240;&#x9700;&#x5DE5;&#x5177;" class="headerlink" title="&#x5B89;&#x88C5;laravel&#x73AF;&#x5883;&#x6240;&#x9700;&#x5DE5;&#x5177;"></a>&#x5B89;&#x88C5;laravel&#x73AF;&#x5883;&#x6240;&#x9700;&#x5DE5;&#x5177;</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Laragon集成开发环境"><span class="nav-number">1.1.</span> <span class="nav-text"><a href="#Laragon&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;" class="headerlink" title="Laragon&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;"></a>Laragon&#x96C6;&#x6210;&#x5F00;&#x53D1;&#x73AF;&#x5883;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Laragon"><span class="nav-number">1.2.</span> <span class="nav-text"><a href="#&#x914D;&#x7F6E;Laragon" class="headerlink" title="&#x914D;&#x7F6E;Laragon"></a>&#x914D;&#x7F6E;Laragon</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装composer"><span class="nav-number">1.3.</span> <span class="nav-text"><a href="#&#x5B89;&#x88C5;composer" class="headerlink" title="&#x5B89;&#x88C5;composer"></a>&#x5B89;&#x88C5;composer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置composer"><span class="nav-number">1.4.</span> <span class="nav-text"><a href="#&#x914D;&#x7F6E;composer" class="headerlink" title="&#x914D;&#x7F6E;composer"></a>&#x914D;&#x7F6E;composer</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装laravel"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x5B89;&#x88C5;laravel" class="headerlink" title="&#x5B89;&#x88C5;laravel"></a>&#x5B89;&#x88C5;laravel</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -935,6 +739,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
